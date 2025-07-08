@@ -62,7 +62,30 @@ This project is built with:
 
 ## How can I deploy this project?
 
-Simply open [Lovable](https://lovable.dev/projects/9d1192c3-0d3b-498a-8874-6e0f4a754e41) and click on Share -> Publish.
+### GitHub Pages (Automatic)
+This project is configured for automatic deployment to GitHub Pages. Every push to the main/master branch will trigger a build and deployment.
+
+**Live Site**: https://replybintunet.github.io/video-stream-launchpad/
+
+### Manual Deployment to GitHub Pages
+If you want to deploy manually:
+
+1. Build the project:
+   ```sh
+   npm run build
+   ```
+
+2. Deploy the `dist` folder to `gh-pages` branch:
+   ```sh
+   # Install gh-pages if you haven't already
+   npm install -g gh-pages
+   
+   # Deploy to gh-pages branch
+   gh-pages -d dist
+   ```
+
+### Lovable Deployment
+You can also deploy via [Lovable](https://lovable.dev/projects/9d1192c3-0d3b-498a-8874-6e0f4a754e41) by clicking Share -> Publish.
 
 ## Can I connect a custom domain to my Lovable project?
 
