@@ -61,7 +61,12 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				youtube: {
+					DEFAULT: 'hsl(var(--youtube-red))',
+					dark: 'hsl(var(--youtube-dark))'
+				},
+				success: 'hsl(var(--success-green))'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
